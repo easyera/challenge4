@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Newsletter sign-up form with success message</title>
+
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <!-- email updated -->
+  <div class="successpage">
+    <div class="coal_cen">
+      <h1>Stay updated!</h1>
+      <p>Join 60,000+ product managers receiving monthly updates on:</p>
+      <ul>
+        <li>Product discovery and building what matters</li>
+        <li>Measuring to ensure update are a success</li>
+        <li> And much more!</li>
+      </ul>
+      <form id="myForm">
+        <label for="useremail">Email address</label>
+        <span class="error"></span>
+        <input type="email" name="useremail" placeholder="examble@company.com"/>
+        <button type="submit">Subscibe to monthly newsletter</button>
+      </form>
+    </div>
+    <img src="assets\images\illustration-sign-up-desktop.svg" alt="nothing">
+  </div>
+  <!-- thank you result -->
+  <div id="thankpage">
+    <div>
+      <img class="imgsuccess" src="assets\images\icon-success.svg" alt="success">
+      <h1>Thanks for subscribing!</h1>
+      <P>A confirmation email has been sent to <span id="emailval">ash@loremcompany.com</span>. Please open it and click the button inside to confirm your
+        subsciption.</P>
+    </div>
+    <button id="dismiss">Dismiss message</button>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
